@@ -3,111 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="flex-column">
-        <div class="container">
-            <div class="header-logo">
-                <div class="logo">
-                    <img src="img/news-logo.png" alt="">
-                </div>
-                <div class="header-title">
-                    <h1><a href="">TC ros</a></h1>
-                </div>
+    <header class="flex-column container">
+        <div class="header-logo">
+            <div class="logo">
+                <img src="img/news-logo.png" alt="">
+            </div>
+            <div class="header-title">
+                <h1><a href="">TC ros</a></h1>
             </div>
         </div>
-        <div class="nav container">
-            <nav>
-                <ul class="menu">
-                    <li class="button">Latest News</li>
-                    <li class="button">City</li>
-                    <li class="button">Technology</li>
-                    <li class="button">Sports</li>
-                    <li class="button">Social
-                        <ul class="sub-menu">
-                            <li class="button">Facebook</li>
-                            <li class="button">Twitter</li>
-                            <li class="button">Instagram</li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
     </header>
-    <main class="container main-container">
-        <div class="section-title">
-            <span>LATEST NEWS</span>
+    <div class="container">
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+            <input type="checkbox">
+            <ul>
+                <li>Latest News</li>
+                <li>City</li>
+                <li>Technology</li>
+                <li>Sports</li>
+                <li>Social</li>
+            </ul>
+        </div>
+    </div>
+    <section class="disp container">
+        <div class="sponsor-content">
+            <div class="article">
+                <img src="img/50-off.png" alt="">
+            </div>
         </div>
         <div class="main-content">
             <div class="article">
-                <img src="img/tech.jpg" alt="" width="150">
-                <h2 class="article-h2">new technologies new ideas</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, hic aliquam eos eius sunt culpa? Modi praesentium voluptate inventore explicabo sequi cupiditate a eveniet voluptatum itaque. Distinctio nihil inventore asperiores?</p>
+                <h1>NEW TECHNOLOGIES, NEW IDEAS</h1>
+                <img src="img/tech.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, modi dicta. Eligendi, sunt natus dolor eaque aliquid architecto in, fugiat, illo laudantium delectus rem neque vitae nihil necessitatibus sint veritatis.</p>
             </div>
-            <div class="flex-column">
+            <div class="main-section">
                 <div class="article">
-                    <img src="img/control-alcohol.jpg" alt="">
-                    <div>
-                        <h2 class="section-h2">They identified the driver shot by two attackers in the southern zone</h2>
-                    </div>
+                    <img src="img/phone.jpg" alt="">
+                    <h2>apple begins a new stage</h2>
                 </div>
                 <div class="article">
-                    <img src="img/dar-a-luz-en-pandemia.jpg" alt="">
-                    <h2 class="section-h2">Women who gave birth in a pandemic: "Three hours after giving birth they swabbed me and I tested positive"</h2>
+                    <img src="img/trump.jpg" alt="">
+                    <h2>elections create chaos in ny</h2>
+                </div>
+                <div class="article">
+                    <img src="img/travel.jpg" alt="">
+                    <h2>covid campaign helps to be at home</h2>
                 </div>
             </div>
         </div>
-    </main>
-    <section class="container flex-column section-content">
-        <div class="section-title">
-            <span>THIS WEEK</span>
-        </div>
-        <div class="disp-flex">
-            <div class="section-article">
-                <img src="img/travel.jpg" alt="">
-                <h2 class="section-h2">LA POBLACION YA PIENSA EN VIAJES PARA EL VERANO</h2>
-            </div>
-            <div class="section-article">
-                <img src="img/economy.jpg" alt="">
-                <h2 class="section-h2">NO DA A BASTO PARA LOS PROXIMOS AÑOS Y SIGUEN SUMANDO</h2>
-            </div>
-            <div class="section-article">
-                <img src="img/phone.jpg" alt="">
-                <h2 class="section-h2">LA CUARENTENA INCREMENTO EL USO DE LAS REDES Y LAS PERSONAS LO PADECEN</h2>
-            </div>
-            <div class="section-article">
-                <img src="img/nature.jpg" alt="">
-                <h2 class="section-h2">UNA ISLA PARADISIACA: TAIWAN, ISLAND</h2>
-            </div>
-            <div class="section-article">
-                <img src="img/trump.jpg" alt="">
-                <h2 class="section-h2">LAS ELECCIONES EN ESTADOS UNIDOS GENERAN CAOS EN LAS CALLES DE NY</h2>
-            </div>
+        <div class="read-content">
+            <h2>More read</h2>
+            <ul>
+                    <li><h3>Donald Trump called Joe Biden "corrupt" and Hillary Clinton "crooked"</h3></li>
+                    <li><h3>In pandemic mode: stories of mothers who went through the quarantine</h3></li>
+                    <li><h3>Coronavirus: 1,001 new cases in Rosario, 2,217 in the province and 27 deaths</h3></li>
+                    <li><h3>The story of the Rosario bus who was received from a lawyer driving 133</h3></li>
+                    <li><h3>Kun Agüero had a controversial gesture with a linesman</h3></li>
+            </ul>
         </div>
     </section>
-    <footer class="footer-container container">
-        <div>
-            <span>TODOS LOS DERECHOS RESERVADOS TC ROS 2020c</span>
-        </div>
-        <div>
-            <ul class="menu">
-                <li class="button">Latest News</li>
-                <li class="button">City</li>
-                <li class="button">Technology</li>
-                <li class="button">Sports</li>
-            </ul>
-        </div>
-        <div>
-            <ul class="sub-menu">
-                <li class="button">Facebook</li>
-                <li class="button">Twitter</li>
-                <li class="button">Instagram</li>
-            </ul>
-        </div>
-    </footer>
+    <footer class="footer-container container"></footer>
 </body>
 </html>
