@@ -6,15 +6,7 @@
     display: none;
 }
 
-.menu li {
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: black;
-
-}
-
-.menu li:hover {
+.menu li:hover, .menu-footer li:hover{
     color: red;
 }
 
@@ -27,6 +19,26 @@
 
 .menu > input:checked + ul {
     display: block;
+    background-color: black;
+}
+
+.menu > input:checked, .menu li {
+    color: white;
+}
+
+
+/* FOOTER NAV */
+
+.menu-footer {
+    align-self: center;
+}
+
+.menu-footer li {
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
 }
 
 
@@ -39,7 +51,31 @@
         display: none;
     }
 
-    .menu ul{
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+
+    .menu li {
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: black;
+        cursor: pointer;
+    }
+
+    .menu li {
+        transition: 1s;
+    }
+
+    .menu li:hover {
+        transform: translateY(-5px);
+        transition: 1s;
+    }
+
+    .menu-footer ul {
         display: flex;
         justify-content: space-around;
         align-items: center;
