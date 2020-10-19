@@ -48,7 +48,7 @@
 @media (min-width: 768px) {
     /* For desktop: */
 
-    .menu i, .menu input {
+    .menu label i, .menu input {
         display: none;
     }
 
