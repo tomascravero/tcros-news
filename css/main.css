@@ -90,6 +90,8 @@
 
 .more-read h3, .read-content {
     padding: 20px 0;
+    cursor: pointer;
+    transition: 1s;
 }
 
 #read-sect-h2 {
@@ -153,7 +155,7 @@
     }
     .read-content {
         width: 20%;
-        align-self: center;
+        align-self: flex-start;
     }
 
     .sponsor-content {
@@ -170,12 +172,8 @@
 
     /* MORE READ*/
 
-    .read-content {
-        transition: 1s;
-    }
-
-    .read-content:hover {
-        transform: scale(1.2);
+    .more-read h3:hover {
+        transform: scale(1.1);
         transition: 1s;
     }
 
