@@ -13,17 +13,16 @@
 .menu label i, .menu input {
     display: block;
     font-size: 50px;
-    width: 10%;
-    margin: 0 auto;
 }
 
 #check:checked + ul {
     display: block;
-    text-align: center;
+    text-align: left;
     background-color: black;
 }
 
 #check:checked, .menu li {
+    padding: 15px 5px;
     color: white;
 }
 
