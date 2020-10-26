@@ -6,23 +6,29 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>TC ROS - NEWS</title>
 </head>
 <body>
-    <header class="flex-column container">
-        <div class="header-logo">
+    <header class="header-content">
+            <div class="time">
+                <span>October 20th, 2020</span>
+            </div>
             <div class="logo">
-                <img src="img/news-logo.png" alt="">
+                <div class="header-img">
+                    <img src="img/news-logo.png" alt="">
+                </div>
+                <div class="header-name">
+                    <h1>TC ros</h1>
+                </div>
             </div>
-            <div class="header-title">
-                <h1><a href="index.html">TC ros</a></h1>
+            <div class="search-content">
+                <i class="fas fa-search"></i>
+                <input type="search" name="" placeholder="Search" id="search">
             </div>
-        </div>
     </header>
-    <div class="container">
         <div class="menu">
             <label for="check"><i class="fas fa-bars"></i></label>
             <input type="checkbox" id="check">
@@ -34,65 +40,129 @@
                 <li>Social</li>
             </ul>
         </div>
-    </div>
-    <section class="disp container news">
-        <div class="sponsor-content">
-            <div class="article-aside">
-                <p id="writers">WRITERS</p>
-            </div>
-            <div class="article-writer">
-                <img src="img/writer.jpg" alt="">
-                <figcaption>Stephen Thomsom</figcaption>
-            </div>
-            <div class="article-writer">
-                <img src="img/writer-2.jpg" alt="">
-                <figcaption>Cristina Gomez</figcaption>
-            </div>
-            <div id="samsung">
-                <p id="writers">ADVERTISING</p>
-                <img src="img/samsung.png" alt="">
-            </div>
-        </div>
-        <div class="main-content">
-            <div>
-                <span>OCTOBER 20TH, 2020</span>
-            </div>
-            <div class="article">
-                <h1 id="title-main">5G TECHNOLOGY</h1>
-                <img src="img/tech.jpg" alt="">
-                <p id="description">This new mobile technology will increase connection speed, minimize latency (the response time of the web), and exponentially multiply the number of connected devices. In other words: we will be connected to everything, all day, and in the shortest possible time. But is dangerous?</p>
-            </div>
-            <div class="main-section">
-                <div class="article-aside">
+    <section>
+        <div class="container-main display-main">
+            <div class="main-content">
+                <div class="most-imp">
+                    <img src="img/tech.jpg" alt="#">
+                    <div class="news-desc">
+                        <h2>5g technology</h2>
+                        <p><span class="note">new technologies will change the world</span>- said Mark Zuckerberg
+                        in his interview for radio m. In telecommunications, 5G is the fifth generation technology 
+                        standard for broadband cellular networks, which cellular phone companies began deploying 
+                        worldwide in 2019, and is the planned successor to the 4G networks which provide connectivity 
+                        to most current cellphones</p>
+                    </div>
+                </div>
+                <div class="article">
                     <img src="img/phone.jpg" alt="">
-                    <h2>Hello iPhone 12 and iPhone 12 Pro</h2>
+                    <h2>Iphone 12 Is Now Available. Is It Really Worth It?</h2>
                 </div>
-                <div class="article-aside">
+                <div class="article">
                     <img src="img/trump.jpg" alt="">
-                    <h2>elections create chaos in ny</h2>
+                    <h2>fanatism reaches extreme levels. </h2>
                 </div>
-                <div class="article-aside">
+                <div class="article">
                     <img src="img/travel.jpg" alt="">
-                    <h2>covid campaign helps to be at home</h2>
+                    <h2>the virus is everywhere and people do not know it</h2>
+                </div>
+            </div>
+            <div class="advertising">
+                <h3>writers</h3>
+                <div class="writers">
+                    <div class="article-writer">
+                        <img src="img/writer.jpg" alt="#">
+                        <span>alexander pink</span>
+                    </div>
+                    <div class="article-writer">
+                        <img src="img/writer-2.jpg" alt="">
+                        <span>mia rodriguez</span>
+                    </div>
+                </div>
+                <div class="ads">
+                    <div id="ad-samsung">
+                        <img src="img/samsung.png" alt="">
+                        <figcaption>Advertising</figcaption>
+                    </div>
+                    <div id="ad-pepsi">
+                        <img src="img/pepsi.jpg" alt="">
+                        <figcaption>Advertising</figcaption>
+                    </div>
+                </div>
+            </div>
+            <div class="read-sect">
+                <div class="search-content">
+                    <i class="fas fa-search"></i>
+                    <input type="search" name="" placeholder="Search" id="search">
+                </div>
+                <div class="more-read">
+                    <h2 class="read-sect-h2">more read</h2>
+                    <h3>Donald Trump called Joe Biden "corrupt" and Hillary Clinton "crooked"</h3>
+                    <h3>In pandemic mode: stories of mothers who went through the quarantine</h3>
+                    <h3>Coronavirus: 1,001 new cases in Rosario, 2,217 in the province and 27 deaths</h3>
+                    <h3>The story of the Rosario bus who was received from a lawyer driving 133</h3>
+                    <h3>Kun Agüero had a controversial gesture with a linesman</h3>
+                </div>
+                <div class="more-read">
+                    <h2 class="read-sect-h2">this week</h2>
+                    <h3>Donald Trump called Joe Biden "corrupt" and Hillary Clinton "crooked"</h3>
+                    <h3>In pandemic mode: stories of mothers who went through the quarantine</h3>
                 </div>
             </div>
         </div>
-        <div class="read-content">
-            <div>
-                <i class="fas fa-search"></i>
-                <input type="search" name="" placeholder="Search" id="search">
+        <div class="dolar-content">
+            <div class="dolar-title">
+                <h4>dolar today in argentina: october 20th, 2020</h4>
             </div>
-            <div class="more-read">
-                <h2 id="read-sect-h2">More read</h2>
-                <h3>Donald Trump called Joe Biden "corrupt" and Hillary Clinton "crooked"</h3></li>
-                <h3>In pandemic mode: stories of mothers who went through the quarantine</h3></li>
-                <h3>Coronavirus: 1,001 new cases in Rosario, 2,217 in the province and 27 deaths</h3></li>
-                <h3>The story of the Rosario bus who was received from a lawyer driving 133</h3></li>
-                <h3>Kun Agüero had a controversial gesture with a linesman</h3></li>
+            <div class="dolar-oficial">
+                <h5>dolar oficial promedio</h5>
+                <div class="compra">
+                    <span>purchase: $ 77,02</span>
+                </div>
+                <div class="venta">
+                    <span>sale: $ 84,02</span>
+                </div>
+            </div>
+            <div class="dolar-blue">
+                <h5>dolar blue</h5>
+                <div class="compra">
+                    <span>purchase: $ 184,00</span>
+                </div>
+                <div class="venta">
+                    <span>sale: $ 190,00</span>
+                </div>
+            </div>
+        </div>
+        <div class="container-main border align-center">
+            <div class="second-news">
+                <div class="article-2">
+                    <span>social</span>
+                    <img src="img/rumors-covid.jpg" alt="">
+                    <h4>fake news scare people</h4>
+                    <p>Fake news is untrue information presented as news. It often has the aim of damaging 
+                    the reputation of a person or entity, or making money through advertising revenue.</p>
+                </div>
+                <div class="article-2">
+                    <span>tech</span>
+                    <img src="img/virtual-reality.jpg" alt="">
+                    <h4>virtual reality: games and education</h4>
+                    <p>Virtual reality (VR) is a simulated experience that can be similar to or completely different from the real world.
+                    Applications of virtual reality can include entertainment (i.e. video games) and educational purposes.</p>
+                </div>
+                <div class="article-2">
+                    <span>music</span>
+                    <img src="img/music-jbl.jpg" alt="">
+                    <h4>JBL debuts five new Bluetooth speakers</h4>
+                    <p>From compact accessories to suitcase-sized party machines. When it comes to Bluetooth speakers, JBL likes to cover all the bases.</p>
+                </div>
             </div>
         </div>
     </section>
-    <footer class="footer-container container disp">
+    <div id="ad-adidas">
+        <img src="img/banner-adidas.jpg" alt="">
+        <figcaption>Advertising</figcaption>
+    </div>
+    <footer class="footer-content">
         <div class="social">
             <h3>Social</h3>
             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
@@ -108,7 +178,7 @@
                 <li>Social</li>
             </ul>
         </div>
-        <div class="menu-footer">
+        <div class="copyr">
             <p id="copy-logo">TCros <span id="copy">- Copyright © 2020</span></p>
         </div>
     </footer>
