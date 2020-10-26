@@ -1,0 +1,100 @@
+/* MOBILE */
+
+/* FOOTER */
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    background-color: black;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 30px ;
+}
+
+.social h3, .social i {
+    color: white;
+    margin: 0 10px;
+    transition: 1s;
+}
+
+.social h3:hover, .social i:hover {
+    color: red;
+    transition: 1s;
+}
+
+#copy-logo {
+    font-family: "Lequire";
+    color: white;
+}
+
+#copy {
+    font-family: 'Manrope', sans-serif;
+    color: white;
+}
+
+/* FOOTER NAV */
+
+.menu-footer {
+    align-self: center;
+}
+
+.menu-footer li {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 10vh;
+    }
+
+    .social {
+        justify-content: space-between;
+        width: 250px;
+    }
+
+    .copyr {
+        width: 250px;
+        text-align: center;
+    }
+
+    #copy {
+        font-size: 10px;
+    }
+
+    .menu-footer {
+        width: 500px;
+    }
+
+    .menu-footer ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 50px;
+    }
+
+    .menu-footer li {
+        text-decoration: underline;
+    }
+
+    .menu-footer li, .social h3, .social i, .social {
+        margin: 0;
+    }
+}

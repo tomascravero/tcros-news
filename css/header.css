@@ -1,0 +1,123 @@
+/* GLOBALS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+@font-face {
+    font-family: "Lequire";
+    src: url('Lequire.otf') format("opentype");
+}
+
+/* FOR MOBILE */
+
+/* HEADER */ 
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-content > .search-content {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.header-img {
+    width: 50px;
+}
+
+.header-name {
+    font-family: "Lequire";
+    font-size: 2.5rem;
+}
+
+/* NAV */
+
+.menu #check, .menu ul {
+    display: none;
+}
+
+.menu label i {
+    margin-left: 15px;
+    font-size: 50px;
+}
+
+.menu #check:checked + ul{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.menu ul li {
+    width: 50%;
+    padding: 5px 10px;
+    margin: 10px 10px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+}
+
+.menu ul li:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+    .header-content {
+        height: 10vh;
+    }
+
+    .header-content > .search-content {
+        display: block;
+    }
+
+    .menu label i {
+        display: none;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        background-color: black;
+        text-align: center;
+    }
+
+    .menu ul li:hover {
+        cursor: pointer;
+        color: red;
+        transform: scale(1.2);
+        transition: 1s;
+    }
+}
+
+
+
+
+
+
+
+
