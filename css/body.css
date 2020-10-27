@@ -26,41 +26,51 @@ img {
 
 .article {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: left;
+    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-bottom: 20px;
     background-color: white;
     border: 1px solid black;
+}
+
+.article img{
+    width: 40%;
 }
 
 .most-imp {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: left;
+    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: white;
     border: 1px solid black;
 }
 
+.most-imp img {
+    width: 40%;
+}
+
 .article h2 {
-    font-size: 30px;
+    font-size: 4vw;
     line-height: 1.5;
     text-transform: uppercase;
     text-align: center;
-    min-height: 40px;
+    width: 50%;
+    text-decoration: underline;
 }
 
 .most-imp h2 {
-    font-size: 30px;
+    font-size: 4vw;
     line-height: 1.5;
     text-transform: uppercase;
     text-align: center;
     min-height: 40px;
+    width: 50%;
+    text-decoration: underline;
 }
 
 .news-desc p {
@@ -79,6 +89,7 @@ img {
     align-items: center;
     padding-bottom: 20px;
     border-bottom: 1px solid black;
+    margin-top: 50px;
 }
 
 .advertising h3 {
@@ -92,6 +103,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 60%;
 }
 
 .article-writer {
@@ -100,7 +112,7 @@ img {
     justify-content: space-between;
     align-items: center;
     width: 50%;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid black;
@@ -191,12 +203,15 @@ img {
 .article-2 h4 {
     font-weight: 600;
     font-size: 25px;
+    padding: 15px 0;
     text-align: right;
     text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .article-2 p {
     font-size: 15px;
+    padding: 5px 10px;
     text-align: justify;
 }
 
@@ -229,6 +244,16 @@ img {
         background-color: white;
     }
 
+    .article img {
+        width: 50%;
+    }
+
+    .article h2, .most-imp h2 {
+        font-size: 2vw;
+        width: 50%;
+        text-align: center;
+    }
+
     .most-imp {
         width: 45%;
         height: auto;
@@ -236,7 +261,7 @@ img {
     }
 
     .most-imp img {
-        width: 100%;
+        width: 50%;
         min-height: 50%;
     }
 
@@ -260,6 +285,7 @@ img {
     .advertising {
         order: 2;
         width: 100%;
+        margin-top: 30px;
     }
 
     .advertising h3 {
@@ -307,6 +333,7 @@ img {
     .border {
         border: 1px solid black;
         margin-bottom: 20px;
+        background-color: rgba(214, 213, 213, 0.664);
     }
 
     .align-center {
@@ -317,27 +344,50 @@ img {
 
     .second-news{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
         width: 100%;
-        padding: 15px 10px;
+        padding: 0px 10px;
     }
 
     .article-2{
-        width: 20%;
+        display: flex;
+        align-items: center;
+        width: 100%;
         border: none;
-        margin: 0;
+        margin: 20px 0;
         padding: 0;
+        border: 1px solid black;
+        background-color: white;
     }
 
-    .article-2 h4 {
+    .article-2 img {
+        width: 30%;
+        border-right: 1px solid black;
+    }
+
+    .article-2 span {
+        display: none;
+    }
+
+    .article-2-desc {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        text-align: center;
+    } 
+
+    .article-2-desc h4 {
         font-weight: 600;
         font-size: 20px;
-        text-align: right;
+        text-align: center;
     }
 
-    .article-2 p {
+    .article-2-desc p {
         font-size: 15px;
+        width: 70%;
+        align-self: center;
     }
 
     /* DOLAR */
@@ -385,6 +435,10 @@ img {
         flex-wrap: wrap;
     }
 
+    .height-main {
+        min-height: 100vh;
+    }
+
     .container-main {
         margin: 40px auto;
         width: 80%;
@@ -398,20 +452,29 @@ img {
     }
 
     .article {
-        width: 30%;
-        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 200px;
         transition: 1s;
+    }
+
+    .article img {
+        width: 50%;
+        height: auto;
     }
 
     .article:hover {
         background-color: black;
         cursor: pointer;
         transition: 1s;
-        transform: scale(1.1);
     }
 
     .article h2 {
-        font-size: 25px;
+        font-size: 1vw;
+        width: 50%;
+        text-align: center;
     }
 
     .article:hover h2{
@@ -423,11 +486,11 @@ img {
         text-transform: uppercase;
         line-height: 1.5;
         text-align: center;
+        width: 50%;
     }
 
     .most-imp img {
         width: 50%;
-        align-self: center;
     }
 
     .most-imp {
@@ -438,12 +501,28 @@ img {
         height: auto;
     }
 
+    .most-imp:hover {
+        background-color: black;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .most-imp:hover h2 {
+        color: white;
+    }
+
+    .most-imp:hover p {
+        color: white;
+    }
+
     .news-desc {
         align-self: center;
     }
 
     .news-desc p {
         display: block;
+        text-align: justify;
+        font-size: 1vw;
     }
 
     /* MORE READ */
@@ -458,18 +537,20 @@ img {
         justify-content: space-between;
         align-self: flex-start;
         order: 3;
-        /*margin-top: 20px;*/
         margin-top: 0;
         width: 20%;
     }
 
     .more-read {
         width: 100%;
+        padding: 0 20px;
     }
 
     .more-read h3 {
-        text-align: center;
+        text-align: justify;
         color: black;
+        padding-bottom: 15px;
+        border-bottom: 1px solid black;
     }
 
     .more-read h3:hover {
@@ -492,6 +573,7 @@ img {
         order: 1;
         border: none;
         width: 20%;
+        margin-top: 0;
     }
 
     #ad-adidas {
@@ -537,19 +619,12 @@ img {
         padding: 15px 10px;
     }
 
-    .article-2{
-        width: 30%;
-        border: 1px solid black;
-        padding: 15px 15px;
-        background-color: white;
-    }
-
-    .article-2 h4 {
-        font-weight: 600;
-        font-size: 20px;
-        text-align: right;
-        color: black;
-    }
+    .article-2-desc {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        text-align: center;
+    } 
 
     .article-2 p {
         font-size: 15px;
