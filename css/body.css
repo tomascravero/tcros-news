@@ -60,7 +60,6 @@ img {
     text-transform: uppercase;
     text-align: center;
     width: 50%;
-    text-decoration: underline;
 }
 
 .most-imp h2 {
@@ -70,7 +69,6 @@ img {
     text-align: center;
     min-height: 40px;
     width: 50%;
-    text-decoration: underline;
 }
 
 .news-desc p {
