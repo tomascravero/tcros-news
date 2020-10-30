@@ -6,6 +6,21 @@
     padding: 0;
 }
 
+html {
+    min-height: 100vh;
+    height: 100%;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: white;
+    height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
 .container {
     width: 100%;
 }
@@ -19,12 +34,15 @@
 
 /* HEADER */ 
 
+header {
+    height: 20vh;
+}
+
 .header-content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 20vh;
     width: 100%;
     margin: 0 auto;
 }
@@ -84,12 +102,25 @@
 
 @media (min-width: 768px) {
 
-    .header-content {
+    header {
         height: 10vh;
     }
 
+    .time, .logo, .search-content {
+        width: 30%;
+    }
+
     .header-content > .search-content {
-        display: block;
+        display: flex;
+    }
+
+    .search-content > input {
+        width: 50%;
+        align-self: flex-end;
+    }
+
+    .menu {
+        height: 10vh;
     }
 
     .menu label i {
