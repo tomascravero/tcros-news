@@ -1,0 +1,147 @@
+/*SUBS CONTAINER DIV*/
+
+/* MOBILE FIRST */
+
+.sub-container {
+    width: 100%;
+    /*margin-top: 20px;*/
+    margin-bottom: 20px;
+}
+
+/*FORM SUBSCRIPTION CONTENT*/
+
+.sub-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px 20px;
+    background-color: black;
+    border-radius: 15px;
+}
+
+/*JOIN US*/
+
+.sub-content > h1 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    color: white;
+    margin-bottom: 20px;
+    background-color :black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*FORM INPUT LABELS*/
+
+.form-input-disp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-input-disp > label {
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+    color: white;
+}
+
+.form-input-disp > input {
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: black;
+}
+
+.form-input-disp > input:focus {
+    border: none;
+    background-color: black;
+    border-bottom: 1px solid red;
+}
+
+/*DATOS INSERTADOS*/
+
+.form-input-disp > p {
+    font-size: 1em;
+    text-align: center;
+}
+
+/*BUTTON SUBMIT*/
+
+.form-input-disp > button {
+    font-family: 'Manrope', sans-serif;
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* TABLES & DESKTOP*/
+
+@media (min-width: 768px){
+
+    .sub-container {
+        height: 70vh;
+        margin: 0;
+    }
+
+    .sub-content, .sub-content > h1 {
+        background-color: white;
+    }
+
+    .sub-content > h1, .form-input-disp > label, .form-input-disp > input {
+        color: black;
+    }
+
+    .form-input-disp > input, .form-input-disp > input:focus {
+        background-color: white;
+        border-bottom: 1px solid black;
+    }
+
+    .sub-content > form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .form-input-disp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+    }
+
+    /*BUTTON*/
+
+    .form-input-disp > button {
+        background-color: black;
+        color: white;
+    }
+
+    /*BUTTON HOVER*/
+    .form-input-disp > button:hover {
+        background-color: white;
+        color: black;
+        transition: 1s;
+    }
+
+    #button {
+        width: 100%;
+    }
+
+} 
