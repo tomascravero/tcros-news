@@ -30,15 +30,15 @@ function validaName() {
             }
         }
         if (cont >= 1){
-                document.getElementById('new-name').innerHTML = 'Valido';
+                document.getElementById('new-name').innerHTML = 'Valid';
                 document.getElementById('new-name').style.color = 'green';
         }else {
-            document.getElementById('new-name').innerHTML = "El nombre: " + nombre + " no tiene espacios.";
+            document.getElementById('new-name').innerHTML = "Invalid Name.";
             document.getElementById('new-name').style.color = 'red';
             }
         //console.log('el nombre no tiene 6 letras');
     }else { // funciona
-        document.getElementById('new-name').innerHTML = "El nombre: " + nombre + " no tiene 6 letras.";
+        document.getElementById('new-name').innerHTML = "Invalid Name.";
         document.getElementById('new-name').style.color = 'red';
     }
     // COMPARA SI HAY MAS DE 1 ESPACIO
@@ -65,10 +65,10 @@ function validaEmail(){
     console.log($email);
     var regex=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
     if ($email.search(regex) == 0){
-        document.getElementById('new-email').innerHTML = 'Valido';
+        document.getElementById('new-email').innerHTML = 'Valid';
         document.getElementById('new-email').style.color = 'green';
     }else {
-        document.getElementById('new-email').innerHTML = 'El email no es valido';
+        document.getElementById('new-email').innerHTML = 'Invalid Email';
         document.getElementById('new-email').style.color = 'red';
     }
 }
@@ -81,10 +81,10 @@ function validaPass(){
     var alfan = /^(?=.*\d)(?=.*[a-záéíóúüñ]).*[A-ZÁÉÍÓÚÜÑ]/;
     var $pass = document.getElementById('pass').value;
     if ($pass.search(alfan) == 0){
-        document.getElementById('new-pass').innerHTML = 'La password es valida.';
+        document.getElementById('new-pass').innerHTML = 'Valid Pass.';
         document.getElementById('new-pass').style.color = 'green';
     }else{
-        document.getElementById('new-pass').innerHTML = 'La password no es valida.';
+        document.getElementById('new-pass').innerHTML = 'Invalid Pass.';
         document.getElementById('new-pass').style.color = 'red';
     }
 }
@@ -97,14 +97,14 @@ function validaAge(){
     var $age = document.getElementById('age').value;
     if (isNaN($age)){
         document.getElementById('new-age').style.fontWeight = '600';
-        document.getElementById('new-age').innerHTML = 'Debe ser ingresar un numero.';
+        document.getElementById('new-age').innerHTML = 'Invalid age.';
         document.getElementById('new-age').style.color = 'red';
     }else{
         if (($age % 1 == 0) && ($age >= 18)){
-            document.getElementById('new-age').innerHTML = 'La edad es valida.';
+            document.getElementById('new-age').innerHTML = 'Valid Age.';
             document.getElementById('new-age').style.color = 'green';
         }else{
-            document.getElementById('new-age').innerHTML = 'Debe ingresar una edad valida.';
+            document.getElementById('new-age').innerHTML = 'Invalid age.';
             document.getElementById('new-age').style.color = 'red';
         }
     }
@@ -119,21 +119,33 @@ function validaPhone(){
     var $phoneLarge = $phone.length;
     var $noValido = / /;
     if (isNaN($phone)){
-        document.getElementById('new-phone').innerHTML = 'Debe ingresar un numero.';
+        document.getElementById('new-phone').innerHTML = 'NOT A NUMBER.';
         document.getElementById('new-phone').style.color = 'red';
     }else{
         if (($noValido.test($phone)) || $phoneLarge < 7){
-            document.getElementById('new-phone').innerHTML = 'El numero de telefono no es valido';
+            document.getElementById('new-phone').innerHTML = 'Invalid Phone';
             document.getElementById('new-phone').style.color = 'red';
         }else{
-            document.getElementById('new-phone').innerHTML = 'El numero de telefono es valido';
+            document.getElementById('new-phone').innerHTML = 'Valid Phone';
             document.getElementById('new-phone').style.color = 'green';
         }
     }
 }
 
-// VALIDAR DIRECCION
+// VALIDAR CITY
+document.getElementById('city').addEventListener('blur', validaCity);
 
+function validaCity() {
+    var $city = document.getElementById('city').value;
+    var largeCity = $city.length;
+    if ( largeCity < 3){
+        document.getElementById('new-city').innerHTML = 'Invalid City.';
+        document.getElementById('new-city').style.color = 'red';
+    }else{
+        document.getElementById('new-city').innerHTML = 'Valid City.';
+        document.getElementById('new-city').style.color = 'green';
+    }
+}
 
 // VALIDAR CODIGO POSTAL
 
@@ -144,10 +156,10 @@ function validaPostal(){
     var $postalLarge = $postal.length;
     if ($postalLarge >= 3 ){
         document.getElementById('new-postal').style.color = 'green';
-        document.getElementById('new-postal').innerHTML = 'Postal valida.'
+        document.getElementById('new-postal').innerHTML = 'Valid Postal.'
     }else{
         document.getElementById('new-postal').style.color = 'red';
-        document.getElementById('new-postal').innerHTML = 'Postal no valida.'
+        document.getElementById('new-postal').innerHTML = 'Invalid Postal.'
     }
 }
 
@@ -160,10 +172,10 @@ function validaDni(){
     var $dniLarge = $dni.length;
     if ($dniLarge == 7 || $dniLarge == 8){
         document.getElementById('new-dni').style.color = 'green';
-        document.getElementById('new-dni').innerHTML = 'DNI valido.'
+        document.getElementById('new-dni').innerHTML = 'Valid DNI.'
     }else{
         document.getElementById('new-dni').style.color = 'red';
-        document.getElementById('new-dni').innerHTML = 'DNI novalido.'
+        document.getElementById('new-dni').innerHTML = 'Invalid DNI.'
     }
 }
 
