@@ -10,8 +10,8 @@ Ciudad: Al menos 3 caracteres.
 Código Postal: Al menos 3 caracteres.
 DNI: Número de 7 u 8 dígitos
 */
-
-window.onload = function (){ //CUANDO CARGE TODO EL BODY
+/*
+window.onload = function (){
 
 // VALIDAR NOMBRE
 document.getElementById('name').addEventListener('blur', validaName);
@@ -20,9 +20,7 @@ function validaName() {
     var cont = 0;
     var nombre = document.getElementById('name').value;
     var largo = nombre.length;
-    // VALIDO CANT LETRAS
-    if (largo > 6) { // funciona
-        // CUENTO LA CANTIDAD DE ESPACIOS
+    if (largo > 6) {
         for (var i = 0; i < largo; i++){
             if (nombre[i] == " "){
                 cont++;
@@ -36,8 +34,7 @@ function validaName() {
             document.getElementById('new-name').innerHTML = "Invalid Name.";
             document.getElementById('new-name').style.color = 'red';
             }
-        //console.log('el nombre no tiene 6 letras');
-    }else { // funciona
+    }else { 
         document.getElementById('new-name').innerHTML = "Invalid Name.";
         document.getElementById('new-name').style.color = 'red';
     }
@@ -196,4 +193,4 @@ function mostrarForm(){
 // CORRECCION
 
 
-}
+}*/
