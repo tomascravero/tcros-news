@@ -93,6 +93,11 @@ header {
     border-bottom: 1px solid black;
 }
 
+.menu ul li > a {
+    text-decoration: none;
+    color: black;
+}
+
 .menu ul li:hover {
     background-color: black;
     color: white;
@@ -137,6 +142,11 @@ header {
         text-align: center;
     }
 
+    .menu ul li > a {
+        text-decoration: none;
+        color: white;
+    }
+    
     .menu ul li:hover {
         cursor: pointer;
         color: red;

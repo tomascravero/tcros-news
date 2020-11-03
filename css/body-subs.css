@@ -4,7 +4,6 @@
 
 .sub-container {
     width: 100%;
-    /*margin-top: 20px;*/
     margin-bottom: 20px;
 }
 
@@ -44,6 +43,7 @@
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 10px 10px;
 }
 
 .form-input-disp > label {
@@ -69,11 +69,14 @@
     border-bottom: 1px solid red;
 }
 
+
 /*DATOS INSERTADOS*/
 
 .form-input-disp > p {
     font-size: 1em;
     text-align: center;
+    color: red;
+    visibility: hidden;
 }
 
 /*BUTTON SUBMIT*/
@@ -93,7 +96,7 @@
 @media (min-width: 768px){
 
     .sub-container {
-        height: 70vh;
+        height: 90vh;
         margin: 0;
     }
 
@@ -121,9 +124,13 @@
     .form-input-disp {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         width: 45%;
+    }
+
+    .form-input-disp > p {
+        font-size: 15px;
     }
 
     /*BUTTON*/
@@ -144,4 +151,11 @@
         width: 100%;
     }
 
-} 
+}
+
+@media (min-width: 1200px){
+    .sub-container {
+        height: 70vh;
+        margin: 0;
+    }
+}
