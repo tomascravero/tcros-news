@@ -1,3 +1,2 @@
-TC ROS NEWS - 2020
+[TC ROS NEWS - 2020](https://tomascravero.github.io/tcros-news/)
 
-https://tomascravero.github.io/tcros-news/
