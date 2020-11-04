@@ -107,10 +107,6 @@ header {
 
 @media (min-width: 768px) {
 
-    header {
-        height: 10vh;
-    }
-
     .time, .logo, .search-content {
         width: 30%;
     }
@@ -123,11 +119,6 @@ header {
         width: 50%;
         align-self: flex-end;
     }
-
-    .menu {
-        height: 10vh;
-    }
-
     .menu label i {
         display: none;
     }
