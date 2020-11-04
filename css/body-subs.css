@@ -95,11 +95,6 @@
 
 @media (min-width: 768px){
 
-    .sub-container {
-        height: 90vh;
-        margin: 0;
-    }
-
     .sub-content, .sub-content > h1 {
         background-color: white;
     }
@@ -151,11 +146,4 @@
         width: 100%;
     }
 
-}
-
-@media (min-width: 1200px){
-    .sub-container {
-        height: 70vh;
-        margin: 0;
-    }
 }
