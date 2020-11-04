@@ -124,8 +124,29 @@
         width: 45%;
     }
 
+    .form-input-disp > label {
+        font-size: 1.5vw;
+    }
+
     .form-input-disp > p {
-        font-size: 15px;
+        font-size: 1.5vw;
+        height: 100%;
+    }
+
+    .form-input-disp > p {
+        min-height: 40px;
+        max-height: 40px;
+        text-align: right;
+    }
+
+    .form-input-disp > input {
+        min-height: 20px;
+        max-height: 20px;
+    }
+
+    .form-input-disp > label {
+        min-height: 30px;
+        max-height: 30px;
     }
 
     /*BUTTON*/
@@ -146,4 +167,14 @@
         width: 100%;
     }
 
+}
+
+@media (min-width: 1200px) {
+    .form-input-disp > p {
+        font-size: 15px;
+    }
+
+    .form-input-disp > label {
+        font-size: 1.5em;
+    }
 }
