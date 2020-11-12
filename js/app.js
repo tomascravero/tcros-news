@@ -1,7 +1,7 @@
 
 function validateName(event) {
     var name = document.getElementById('name').value;
-    let space = / /;
+    let space = /\s\w/;
     if (name.length > 6 && space.test(name)) {
         document.getElementById('error-name').style.visibility = 'hidden';
     }else {
@@ -10,7 +10,7 @@ function validateName(event) {
 }
 
 function writeName(event) {
-    document.getElementById('name').addEventListener('keydown', function() {
+    document.getElementById('name').addEventListener('keyup', function() {
         let $tag = document.getElementById('name').value;
         document.getElementById('tag').innerHTML = $tag;
     })
